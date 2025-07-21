@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+ 
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+body{
+    background-color: #dfd3d37a;
+}
+.naver{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.naver-list ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 20px;
+}
+.naver-list ul li a{
+    color: black;
+}
+.naver-list ul li a:hover{
+    color: red;
+    text-decoration:underline
+}
+span i{
+    margin-left: 30px;
+
+}
+.header-baner{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 100px;
+
+}
+.baner h2{
+    font-size: 1.5cm;
+}
+.baner p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.baner button{
+    background-color: #E02C6D;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border: 0;
+    font-size: 20px;
+}
+/* kompite navber */
+
+.compani-logo{
+    text-align: center;
+    margin-top: 50px;
+}
+.compani-logo img{
+    margin-right: 50px;
+}
+
+.section-crad{
+    width: 1140px;
+    margin: 100px auto;
+}
+.section-crad .h2{
+font-size: 1.3cm;
+margin: 40px 0;
+text-align: center;
+}
+.crad{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap:50px 20px;
+    
+}
+.box{
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.crad h2{
+    margin: 15px 0;
+}
+.crad p{
+    margin: 15px 0;
+
+}
+.crad article{
+    width: 60%;
+}
+.crad p i{
+ color: orange;
+}
+
+/* kompit section-crad */
+.main-continer{
+    width: 1100px;
+    margin: 0 auto;
+}
+.main-bottom{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 0 50px;
+}
+.text h2{
+    font-size: 1.3em;
+}
+.text p{
+    margin: 20px 0;
+}
+.text button{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    font-size: 16px;
+    border:0;
+    border-radius: 10px;
+}
+footer{
+    background-color: #0A0826;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 0 50px;
+    margin-top: 100px;
+}
+footer p{
+    margin: 10px 0;
+}
+footer span{
+    font-size: 25px;
+}
+
+
+
+@media screen and (max-width:576px) {
+   .baner h2{
+    font-size: 25px;
+   }
+   .baner-img img{
+    width: 70%;
+    margin-bottom: 50px;
+   }
+   .baner{
+    font-size: 16px;
+   }
+   .baner button{
+    font-size: 16px;
+   }
+   .header-baner{
+    flex-direction: column-reverse
+   }
+   .section-crad .h2{
+    font-size: 30px;
+   }
+   .crad{
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    
+   }
+   .section-crad{
+    width: 100%;
+   }
+   .crad article{
+      margin: 0 auto;
+   }
+   .main-bottom{
+    flex-direction: column-reverse;
+    text-align: center;
+   }
+    .main-continer{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+}
